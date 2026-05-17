@@ -17,8 +17,8 @@ st.set_page_config(
 # --- LOAD DATA METADATA ---
 @st.cache_data
 def load_data():
-    if os.path.exists("metadata_full.csv"):
-        return pd.read_csv("metadata_full.csv")
+    if os.path.exists(""Dashboard/metadata_full.csv"):
+        return pd.read_csv(""Dashboard/metadata_full.csv")
     return None
 
 df = load_data()
